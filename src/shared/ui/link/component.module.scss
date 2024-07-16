@@ -1,0 +1,55 @@
+.link {
+  position: relative;
+  display: inline-block;
+  transition-property: color, opacity, text-decoration-color;
+  transition-duration: var(--transition-duration-150);
+  transition-timing-function: var(--transition-function-linear);
+  width: max-content;
+  line-height: var(--line-height-normal);
+  font-weight: var(--font-weight-regular);
+  color: hsl(var(--muted-foreground));
+
+  @media (hover: hover) {
+    &:hover,
+    &:focus-visible {
+      color: hsl(var(--global-foreground));
+    }
+  }
+
+  @media (hover: none) {
+    &:active,
+    &:focus-visible {
+      color: hsl(var(--global-foreground));
+    }
+  }
+
+  &.link--underline-never {
+    text-decoration: none !important;
+    text-underline-offset: var(--space-sm);
+  }
+
+  &.link--underline-interactive {
+    text-decoration: underline !important;
+    text-decoration-color: transparent !important;
+    text-underline-offset: var(--space-sm);
+
+    @media (hover: hover) {
+      &:hover,
+      &:focus-visible {
+        text-decoration-color: currentcolor !important;
+      }
+    }
+
+    @media (hover: none) {
+      &:active,
+      &:focus-visible {
+        text-decoration-color: currentcolor !important;
+      }
+    }
+  }
+
+  &.link--underline-always {
+    text-decoration: underline !important;
+    text-underline-offset: var(--space-sm);
+  }
+}

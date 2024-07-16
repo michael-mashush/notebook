@@ -1,0 +1,27 @@
+.icon {
+  transition-property: stroke, fill;
+  transition-duration: var(--transition-duration-150);
+  transition-timing-function: var(--transition-function-linear);
+  shape-rendering: geometricprecision;
+
+  &.icon--size-small {
+    min-width: var(--icon-size-sm);
+    max-width: var(--icon-size-sm);
+    min-height: var(--icon-size-sm);
+    max-height: var(--icon-size-sm);
+  }
+
+  &.icon--size-medium {
+    min-width: var(--icon-size-md);
+    max-width: var(--icon-size-md);
+    min-height: var(--icon-size-md);
+    max-height: var(--icon-size-md);
+  }
+
+  &.icon--size-large {
+    min-width: var(--icon-size-lg);
+    max-width: var(--icon-size-lg);
+    min-height: var(--icon-size-lg);
+    max-height: var(--icon-size-lg);
+  }
+}

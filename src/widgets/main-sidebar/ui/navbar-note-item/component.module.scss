@@ -1,0 +1,26 @@
+.navbar-note-item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  width: 100%;
+  min-width: 0;
+}
+
+.navbar-note-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.navbar-note-link {
+  flex-grow: 1;
+  border: 1px solid #000000;
+}
+
+.navbar-note-collapsible {
+  position: relative;
+  border-inline-start: 1px solid hsl(var(--global-border));
+  margin-inline-start: var(--space-2xl);
+  padding-inline-start: var(--space-xs);
+}

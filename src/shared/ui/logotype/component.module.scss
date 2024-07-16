@@ -1,0 +1,10 @@
+.logotype {
+  display: inline-flex;
+  align-items: center;
+  line-height: var(--line-height-shortest);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: var(--font-weight-black);
+  font-size: var(--font-size-xl);
+  color: hsl(var(--global-foreground));
+}

@@ -1,0 +1,11 @@
+.pagination-ellipsis {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: var(--control-size-md);
+  max-width: var(--control-size-md);
+  min-height: var(--control-size-md);
+  max-height: var(--control-size-md);
+  text-align: center;
+}

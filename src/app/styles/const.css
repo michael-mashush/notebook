@@ -1,0 +1,260 @@
+/* stylelint-disable */
+
+:root {
+  --container-width: 1200px;
+}
+
+:root {
+  --space-xs:    2px;
+  --space-sm:    4px;
+  --space-md:    6px;
+  --space-lg:    8px;
+  --space-xl:   12px;
+  --space-2xl:  16px;
+  --space-3xl:  20px;
+  --space-4xl:  24px;
+  --space-5xl:  32px;
+  --space-6xl:  40px;
+  --space-7xl:  48px;
+  --space-8xl:  56px;
+  --space-9xl:  64px;
+  --space-10xl: 72px;
+  --space-11xl: 84px;
+  --space-12xl: 96px;
+}
+
+:root {
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+}
+
+:root {
+  --control-size-sm: 24px;
+  --control-size-md: 32px;
+  --control-size-lg: 40px;
+}
+
+:root {
+  --icon-size-sm: calc(var(--control-size-sm) / 2);
+  --icon-size-md: calc(var(--control-size-md) / 2);
+  --icon-size-lg: calc(var(--control-size-lg) / 2);
+}
+
+:root {
+  --font-family-sans: 'Inter', sans-serif;
+  --font-family-mono: 'JetBrains Mono', monospace;
+}
+
+:root {
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  --font-size-2xl: 22px;
+  --font-size-3xl: 24px;
+  --font-size-4xl: 28px;
+  --font-size-5xl: 32px;
+  --font-size-6xl: 36px;
+  --font-size-7xl: 44px;
+  --font-size-8xl: 56px;
+}
+
+:root {
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+  --font-weight-extrabold: 800;
+  --font-weight-black: 900;
+}
+
+:root {
+  --line-height-shortest: 1.00;
+  --line-height-short: 1.25;
+  --line-height-normal: 1.50;
+  --line-height-high: 1.75;
+  --line-height-highest: 2.00;
+}
+
+:root {
+  --z-index-elevated: 100;
+  --z-index-backdrop: 200;
+  --z-index-sheet: 300;
+  --z-index-dialog: 400;
+  --z-index-popover: 500;
+  --z-index-loader: 600;
+}
+
+:root {
+  --transition-property-all: all;
+  --transition-property-colors: color, background-color, border-color, text-decoration-color, fill, stroke;
+  --transition-property-opacity: opacity;
+  --transition-property-shadow: text-shadow, box-shadow;
+  --transition-property-transform: transform;
+}
+
+:root {
+  --transition-duration-25: 25ms;
+  --transition-duration-50: 50ms;
+  --transition-duration-75: 75ms;
+  --transition-duration-100: 100ms;
+  --transition-duration-150: 150ms;
+  --transition-duration-200: 200ms;
+  --transition-duration-250: 250ms;
+  --transition-duration-300: 300ms;
+}
+
+:root {
+  --transition-delay-25: 25ms;
+  --transition-delay-50: 50ms;
+  --transition-delay-75: 75ms;
+  --transition-delay-100: 100ms;
+  --transition-delay-150: 150ms;
+  --transition-delay-200: 200ms;
+  --transition-delay-250: 250ms;
+  --transition-delay-300: 300ms;
+}
+
+:root {
+  --transition-function-linear: linear;
+  --transition-function-ease-in: ease-in;
+  --transition-function-ease-out: ease-out;
+  --transition-function-ease-in-out: ease-in-out;
+}
+
+:root {
+  --outline-offset: 1px;
+  --outline-width: 1px;
+  --outline-style: solid;
+}
+
+:root,
+:root:has(body.light) {
+  --outline-color: 240deg 10% 3.9%;
+  --global-background: 0deg 0% 100%;
+  --global-border: 240deg 5.9% 90%;
+  --global-foreground: 240deg 10% 3.9%;
+  --image-background: 240deg 5.9% 10%;
+  --image-foreground: 0deg 0% 98%;
+  --card-background: 0deg 0% 100%;
+  --card-border: 240deg 5.9% 90%;
+  --card-foreground: 240deg 10% 3.9%;
+  --popover-background: 0deg 0% 100%;
+  --popover-border: 240deg 5.9% 90%;
+  --popover-foreground: 240deg 10% 3.9%;
+  --primary: 240deg 5.9% 10%;
+  --primary-background: 240deg 5.9% 10%;
+  --primary-border: 240deg 5.9% 10%;
+  --primary-foreground: 0deg 0% 98%;
+  --accent-primary: 240deg 5.9% 22%;
+  --accent-primary-background: 240deg 5.9% 22%;
+  --accent-primary-border: 240deg 5.9% 22%;
+  --accent-primary-foreground: 0deg 0% 98%;
+  --secondary: 240deg 4.8% 95.9%;
+  --secondary-background: 240deg 4.8% 95.9%;
+  --secondary-border: 240deg 4.8% 95.9%;
+  --secondary-foreground: 240deg 5.9% 10%;
+  --accent-secondary: 240deg 4.8% 92.9%;
+  --accent-secondary-background: 240deg 4.8% 92.9%;
+  --accent-secondary-border: 240deg 4.8% 92.9%;
+  --accent-secondary-foreground: 240deg 5.9% 10%;
+  --outlined: 0deg 0% 100%;
+  --outlined-background: 0deg 0% 100%;
+  --outlined-border: 240deg 5.9% 90%;
+  --outlined-foreground: 240deg 10% 3.9%;
+  --accent-outlined: 0deg 0% 98%;
+  --accent-outlined-background: 0deg 0% 98%;
+  --accent-outlined-border: 240deg 5.9% 84%;
+  --accent-outlined-foreground: 240deg 10% 3.9%;
+  --ghost: 0deg 0% 100%;
+  --ghost-background: 0deg 0% 100%;
+  --ghost-border: 0deg 0% 100%;
+  --ghost-foreground: 240deg 10% 3.9%;
+  --accent-ghost: 0deg 0% 96%;
+  --accent-ghost-background: 0deg 0% 96%;
+  --accent-ghost-border: 0deg 0% 96%;
+  --accent-ghost-foreground: 240deg 10% 3.9%;
+  --muted: 240deg 4.8% 85.9%;
+  --muted-background: 240deg 4.8% 85.9%;
+  --muted-border: 240deg 4.8% 85.9%;
+  --muted-foreground: 240deg 3.8% 46.1%;
+  --accent-muted: 240deg 4.8% 80.9%;
+  --accent-muted-background: 240deg 4.8% 80.9%;
+  --accent-muted-border: 240deg 4.8% 80.9%;
+  --accent-muted-foreground: 240deg 3.8% 46.1%;
+  --destructive: 0 84.2% 60.2%;
+  --destructive-background: 0 84.2% 60.2%;
+  --destructive-border: 0 84.2% 60.2%;
+  --destructive-foreground: 0 0% 98%;
+  --accent-destructive: 0 84.2% 66.2%;
+  --accent-destructive-background: 0 84.2% 66.2%;
+  --accent-destructive-border: 0 84.2% 66.2%;
+  --accent-destructive-foreground: 0 0% 98%;
+}
+
+:root:has(body.dark) {
+  --outline-color: 0deg 0% 98%;
+  --global-background: 240deg 10% 3.9%;
+  --global-border: 240deg 3.7% 15.9%;
+  --global-foreground: 0deg 0% 98%;
+  --global-outline: 240deg 4.9% 83.9%;
+  --image-background: 0deg 0% 95%;
+  --image-foreground: 240deg 5.9% 10%;
+  --card-border: 240deg 3.7% 15.9%;
+  --card-background: 240deg 10% 3.9%;
+  --card-foreground: 0deg 0% 98%;
+  --popover-background: 240deg 10% 3.9;
+  --popover-border: 240deg 3.7% 15.9%;
+  --popover-foreground: 0deg 0% 98%;
+  --primary: 0deg 0% 98%;
+  --primary-background: 0deg 0% 98%;
+  --primary-border: 0deg 0% 98%;
+  --primary-foreground: 240deg 5.9% 10%;
+  --accent-primary: 0deg 0% 88%;
+  --accent-primary-background: 0deg 0% 88%;
+  --accent-primary-border: 0deg 0% 88%;
+  --accent-primary-foreground: 240deg 5.9% 10%;
+  --secondary: 240deg 3.7% 15.9%;
+  --secondary-background: 240deg 3.7% 15.9%;
+  --secondary-border: 240deg 3.7% 15.9%;
+  --secondary-foreground: 0deg 0% 98%;
+  --accent-secondary: 240deg 3.7% 20.9%;
+  --accent-secondary-background: 240deg 3.7% 20.9%;
+  --accent-secondary-border: 240deg 3.7% 20.9%;
+  --accent-secondary-foreground: 0deg 0% 98%;
+  --outlined: 240deg 10% 3.9%;
+  --outlined-background: 240deg 10% 3.9%;
+  --outlined-border: 240deg 3.7% 15.9%;
+  --outlined-foreground: 0deg 0% 98%;
+  --accent-outlined: 240deg 10% 9.9%;
+  --accent-outlined-background: 240deg 10% 9.9%;
+  --accent-outlined-border: 240deg 3.7% 22.9%;
+  --accent-outlined-foreground: 0deg 0% 98%;
+  --ghost: 240deg 10% 3.9%;
+  --ghost-background: 240deg 10% 3.9%;
+  --ghost-border: 240deg 10% 3.9%;
+  --ghost-foreground: 0deg 0% 98%;
+  --accent-ghost: 240deg 10% 12.9%;
+  --accent-ghost-background: 240deg 10% 12.9%;
+  --accent-ghost-border: 240deg 10% 12.9%;
+  --accent-ghost-foreground: 0deg 0% 98%;
+  --muted: 240deg 3.7% 15.9%;
+  --muted-background: 240deg 3.7% 15.9%;
+  --muted-border: 240deg 3.7% 15.9%;
+  --muted-foreground: 240deg 5% 64.9%;
+  --accent-muted: 240deg 3.7% 22.9%;
+  --accent-muted-background: 240deg 3.7% 22.9%;
+  --accent-muted-border: 240deg 3.7% 22.9%;
+  --accent-muted-foreground: 240deg 5% 64.9%;
+  --destructive: 0 62.8% 50.6%;
+  --destructive-background: 0 62.8% 50.6%;
+  --destructive-border: 0 62.8% 50.6%;
+  --destructive-foreground: 0 0% 98%;
+  --accent-destructive: 0 62.8% 55.6%;
+  --accent-destructive-background: 0 62.8% 55.6%;
+  --accent-destructive-border: 0 62.8% 55.6%;
+  --accent-destructive-foreground: 0 0% 98%;
+}

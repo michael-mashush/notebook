@@ -1,0 +1,14 @@
+.backdrop {
+  position: fixed;
+  z-index: var(--z-index-backdrop);
+  inset: 0;
+  background-color: #000000aa;
+
+  &.backdrop--blurred {
+    backdrop-filter: blur(1px);
+  }
+
+  &.backdrop--invisible {
+    background-color: transparent;
+  }
+}

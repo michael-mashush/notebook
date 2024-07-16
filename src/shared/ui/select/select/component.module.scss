@@ -1,0 +1,18 @@
+.select {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+
+  &.select--opened {
+    z-index: 2;
+  }
+}
+
+.textarea {
+  cursor: pointer !important;
+  caret-color: transparent;
+}
+
+.dropdown {
+  max-height: 200px;
+}

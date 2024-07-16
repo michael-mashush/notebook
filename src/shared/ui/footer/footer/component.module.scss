@@ -1,0 +1,15 @@
+.footer {
+  position: relative;
+  padding-inline: var(--space-2xl);
+  background-color: hsl(var(--global-background));
+  column-gap: var(--space-2xl);
+}
+
+.footer-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid hsl(var(--global-border));
+  padding-block: var(--space-2xl);
+}

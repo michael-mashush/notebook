@@ -1,0 +1,28 @@
+.editor-toolbar {
+  position: sticky;
+  z-index: var(--z-index-elevated);
+  top: calc(var(--space-9xl) + 1px + var(--space-2xl));
+  display: flex;
+  align-self: center;
+  border: 1px solid hsl(var(--global-border));
+  border-radius: var(--radius-sm);
+  max-width: 100%;
+  background-color: hsl(var(--global-background));
+
+  @media (width <= 768px) {
+    flex-direction: column;
+  }
+}
+
+.editor-toolbar-row {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  gap: var(--space-xs);
+  overflow: auto hidden;
+  padding: var(--space-xs);
+}
+
+.editor-toolbar-select {
+  min-width: 0;
+}

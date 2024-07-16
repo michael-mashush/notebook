@@ -1,0 +1,8 @@
+.sheet-content {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  border-block: 1px solid hsl(var(--global-border));
+  padding-block: var(--space-2xl);
+}

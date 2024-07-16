@@ -1,0 +1,34 @@
+.auth-layout {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+}
+
+.auth-layout-column {
+  position: relative;
+  display: flex;
+  flex-grow: 1;
+  flex-basis: 50%;
+  flex-direction: column;
+
+  &:first-child {
+    @media (width <= 768px) {
+      display: none;
+    }
+  }
+
+  &:last-child {
+    @media (width <= 768px) {
+      flex-basis: 100%;
+    }
+  }
+}
+
+.auth-layout-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

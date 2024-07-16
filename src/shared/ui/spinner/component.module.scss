@@ -1,0 +1,14 @@
+.spinner {
+  position: relative;
+  animation: spin-left-to-right 900ms infinite linear;
+
+  @keyframes spin-left-to-right {
+    0% {
+      rotate: 0deg;
+    }
+
+    100% {
+      rotate: 360deg;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+.auth-actions {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4xl);
+  width: 100%;
+}
+
+.main-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+}
+
+.help-actions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+}

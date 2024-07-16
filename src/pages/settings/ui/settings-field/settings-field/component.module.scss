@@ -1,0 +1,14 @@
+.settings-field {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: var(--space-2xl);
+  border: 1px solid hsl(var(--global-border));
+  border-radius: var(--radius-sm);
+  padding: var(--space-2xl);
+
+  @media (width <= 768px) {
+    flex-direction: column;
+  }
+}

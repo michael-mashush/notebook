@@ -1,0 +1,228 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.textbox {
+  transition-property: background-color, border-color, color, opacity;
+  transition-duration: var(--transition-duration-150);
+  border-width: 1px;
+  border-style: solid;
+  border-radius: var(--radius-sm);
+  padding-inline: calc(var(--space-xl) - var(--space-xs));
+  width: 100%;
+  max-width: 100%;
+  height: var(--control-size-md);
+  line-height: var(--line-height-highest);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-sm);
+
+  // ==================================================
+
+  &.textbox--variant-secondary {
+    border-color: hsl(var(--secondary-border));
+    background-color: hsl(var(--secondary-background));
+    color: hsl(var(--secondary-foreground));
+
+    &::placeholder {
+      color: hsl(var(--muted-foreground) / 0.8);
+    }
+
+    @media (hover: hover) {
+      &:not(:disabled):hover,
+      &:not(:disabled):focus-visible {
+        border-color: hsl(var(--accent-secondary-border));
+        background-color: hsl(var(--accent-secondary-background));
+        color: hsl(var(--accent-secondary-foreground));
+      }
+    }
+
+    @media (hover: none) {
+      &:not(:disabled):active,
+      &:not(:disabled):focus-visible {
+        border-color: hsl(var(--accent-secondary-border));
+        background-color: hsl(var(--accent-secondary-background));
+        color: hsl(var(--accent-secondary-foreground));
+      }
+    }
+
+    &:invalid,
+    &.textbox--invalid {
+      border-color: hsl(var(--destructive) / 0);
+      background-color: hsl(var(--destructive) / 0.1);
+      color: hsl(var(--destructive));
+
+      &::placeholder {
+        color: hsl(var(--destructive) / 0.6);
+      }
+
+      @media (hover: hover) {
+        &:not(:disabled):hover,
+        &:not(:disabled):focus-visible {
+          border-color: hsl(var(--destructive) / 0);
+          background-color: hsl(var(--destructive) / 0.13);
+          color: hsl(var(--destructive));
+        }
+      }
+
+      @media (hover: none) {
+        &:not(:disabled):active,
+        &:not(:disabled):focus-visible {
+          border-color: hsl(var(--destructive) / 0);
+          background-color: hsl(var(--destructive) / 0.13);
+          color: hsl(var(--destructive));
+        }
+      }
+    }
+  }
+
+  &.textbox--variant-outlined {
+    border-color: hsl(var(--outlined-border));
+    background-color: hsl(var(--outlined-background));
+    color: hsl(var(--outlined-foreground));
+
+    &::placeholder {
+      color: hsl(var(--muted-foreground) / 0.8);
+    }
+
+    @media (hover: hover) {
+      &:not(:disabled):hover,
+      &:not(:disabled):focus-visible {
+        border-color: hsl(var(--accent-outlined-border));
+        background-color: hsl(var(--accent-outlined-background));
+        color: hsl(var(--accent-outlined-foreground));
+      }
+    }
+
+    @media (hover: none) {
+      &:not(:disabled):active,
+      &:not(:disabled):focus-visible {
+        border-color: hsl(var(--accent-outlined-border));
+        background-color: hsl(var(--accent-outlined-background));
+        color: hsl(var(--accent-outlined-foreground));
+      }
+    }
+
+    &:invalid,
+    &.textbox--invalid {
+      border-color: hsl(var(--destructive) / 0.5);
+      background-color: hsl(var(--destructive) / 0.05);
+      color: hsl(var(--destructive));
+
+      &::placeholder {
+        color: hsl(var(--destructive) / 0.5);
+      }
+
+      @media (hover: hover) {
+        &:not(:disabled):hover,
+        &:not(:disabled):focus-visible {
+          border-color: hsl(var(--destructive) / 0.7);
+          background-color: hsl(var(--destructive) / 0.07);
+          color: hsl(var(--destructive));
+        }
+      }
+
+      @media (hover: none) {
+        &:not(:disabled):active,
+        &:not(:disabled):focus-visible {
+          border-color: hsl(var(--destructive) / 0.7);
+          background-color: hsl(var(--destructive) / 0.07);
+          color: hsl(var(--destructive));
+        }
+      }
+    }
+  }
+
+  &.textbox--variant-ghost {
+    border-color: hsl(var(--ghost-border));
+    background-color: hsl(var(--ghost-background));
+    color: hsl(var(--ghost-foreground));
+
+    &::placeholder {
+      color: hsl(var(--muted-foreground) / 0.8);
+    }
+
+    @media (hover: hover) {
+      &:not(:disabled):hover,
+      &:not(:disabled):focus-visible {
+        border-color: hsl(var(--accent-ghost-border));
+        background-color: hsl(var(--accent-ghost-background));
+        color: hsl(var(--accent-ghost-foreground));
+      }
+    }
+
+    @media (hover: none) {
+      &:not(:disabled):active,
+      &:not(:disabled):focus-visible {
+        border-color: hsl(var(--accent-ghost-border));
+        background-color: hsl(var(--accent-ghost-background));
+        color: hsl(var(--accent-ghost-foreground));
+      }
+    }
+
+    &:invalid,
+    &.textbox--invalid {
+      border-color: hsl(var(--destructive) / 0);
+      background-color: hsl(var(--destructive) / 0.05);
+      color: hsl(var(--destructive));
+
+      &::placeholder {
+        color: hsl(var(--destructive) / 0.5);
+      }
+
+      @media (hover: hover) {
+        &:not(:disabled):hover,
+        &:not(:disabled):focus-visible {
+          border-color: hsl(var(--destructive) / 0);
+          background-color: hsl(var(--destructive) / 0.07);
+          color: hsl(var(--destructive));
+        }
+      }
+
+      @media (hover: none) {
+        &:not(:disabled):active,
+        &:not(:disabled):focus-visible {
+          border-color: hsl(var(--destructive) / 0);
+          background-color: hsl(var(--destructive) / 0.07);
+          color: hsl(var(--destructive));
+        }
+      }
+    }
+  }
+
+  // ==================================================
+
+  &.textbox--with-start-icon {
+    padding-inline-start: calc((var(--space-xl) - var(--space-xs)) * 2 + var(--icon-size-md));
+  }
+
+  &.textbox--with-end-icon {
+    padding-inline-end: calc((var(--space-xl) - var(--space-xs)) * 2 + var(--icon-size-md));
+  }
+}
+
+.start-icon,
+.end-icon {
+  position: absolute;
+  color: hsl(var(--muted-foreground) / 0.8);
+  pointer-events: none;
+
+  .wrapper:has(.textbox:invalid) &,
+  .wrapper:has(.textbox.textbox--invalid) & {
+    color: hsl(var(--destructive) / 0.6);
+  }
+
+  .wrapper:has(.textbox:disabled) & {
+    opacity: 0.5;
+  }
+}
+
+.start-icon {
+  inset-block-start: calc(50% - var(--icon-size-md) / 2);
+  inset-inline-start: calc((var(--space-xl) - var(--space-xs)) + 1px);
+}
+
+.end-icon {
+  inset-block-start: calc(50% - var(--icon-size-md) / 2);
+  inset-inline-end: calc((var(--space-xl) - var(--space-xs)) + 1px);
+}

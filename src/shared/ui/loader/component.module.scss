@@ -1,0 +1,28 @@
+.loader {
+  z-index: var(--z-index-loader);
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(var(--global-background));
+  color: hsl(var(--global-foreground));
+
+  &.loader--position-fixed {
+    position: fixed;
+  }
+
+  &.loader--position-absolute {
+    position: absolute;
+  }
+}
+
+.loader-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.loader-description {
+  max-width: 400px;
+}

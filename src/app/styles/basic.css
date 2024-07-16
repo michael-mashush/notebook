@@ -1,0 +1,16 @@
+html {
+  line-height: var(--line-height-normal);
+  font-family: var(--font-family-sans);
+  font-size: var(--font-size-sm);
+  color: #000000;
+}
+
+*:focus-visible {
+  outline: var(--outline-width) var(--outline-style) hsl(var(--outline-color));
+  outline-offset: var(--outline-offset);
+}
+
+::selection {
+  background-color: hsl(var(--primary-background));
+  color: hsl(var(--primary-foreground));
+}

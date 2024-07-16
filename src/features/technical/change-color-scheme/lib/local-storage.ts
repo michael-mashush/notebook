@@ -1,0 +1,1 @@
+export const LOCAL_STORAGE_COLOR_SCHEME_KEY = 'color-scheme';

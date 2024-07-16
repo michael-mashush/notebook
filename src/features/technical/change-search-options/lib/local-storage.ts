@@ -1,0 +1,1 @@
+export const LOCAL_STORAGE_SEARCH_OPTIONS_KEY = 'search-options';

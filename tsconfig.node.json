@@ -1,0 +1,31 @@
+{
+
+  // https://www.typescriptlang.org/tsconfig#compiler-options
+  "compilerOptions": {
+
+    // https://www.typescriptlang.org/tsconfig#composite
+    "composite": true,
+
+    // https://www.typescriptlang.org/tsconfig#skipLibCheck
+    "skipLibCheck": true,
+
+    // https://www.typescriptlang.org/tsconfig#module
+    "module": "ESNext",
+
+    // https://www.typescriptlang.org/tsconfig#moduleResolution
+    "moduleResolution": "bundler",
+
+    // https://www.typescriptlang.org/tsconfig#allowSyntheticDefaultImports
+    "allowSyntheticDefaultImports": true,
+
+    // https://www.typescriptlang.org/tsconfig#strict
+    "strict": true,
+
+  },
+
+  // https://www.typescriptlang.org/tsconfig#include
+  "include": [
+    "vite.config.ts"
+  ]
+
+}

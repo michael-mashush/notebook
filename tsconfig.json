@@ -1,0 +1,97 @@
+{
+
+  // https://www.typescriptlang.org/tsconfig#compiler-options
+  "compilerOptions": {
+
+    // https://www.typescriptlang.org/tsconfig#target
+    "target": "ES2020",
+
+    // https://www.typescriptlang.org/tsconfig#useDefineForClassFields
+    "useDefineForClassFields": true,
+
+    // https://www.typescriptlang.org/tsconfig#lib
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
+
+    // https://www.typescriptlang.org/tsconfig#module
+    "module": "ESNext",
+
+    // moduleResolution
+    "moduleResolution": "Bundler",
+
+    // https://www.typescriptlang.org/tsconfig#skipLibCheck
+    "skipLibCheck": true,
+
+    // https://www.typescriptlang.org/tsconfig#allowImportingTsExtensions
+    "allowImportingTsExtensions": true,
+
+    // https://www.typescriptlang.org/tsconfig#resolveJsonModule
+    "resolveJsonModule": true,
+
+    // https://www.typescriptlang.org/tsconfig#isolatedModules
+    "isolatedModules": true,
+
+    // https://www.typescriptlang.org/tsconfig#noEmit
+    "noEmit": true,
+
+    // https://www.typescriptlang.org/tsconfig#jsx
+    "jsx": "react-jsx",
+
+    // https://www.typescriptlang.org/tsconfig#types
+    "types": [
+      "vite/client",
+      "vite-plugin-svgr/client",
+      "vitest/globals"
+    ],
+
+    // https://www.typescriptlang.org/tsconfig#strict
+    "strict": true,
+
+    // https://www.typescriptlang.org/tsconfig#noUnusedLocals
+    "noUnusedLocals": true,
+
+    // https://www.typescriptlang.org/tsconfig#noUnusedParameters
+    "noUnusedParameters": true,
+
+    // https://www.typescriptlang.org/tsconfig#noFallthroughCasesInSwitch
+    "noFallthroughCasesInSwitch": true,
+
+    // https://www.typescriptlang.org/tsconfig#baseUrl
+    "baseUrl": "./src",
+
+    // https://www.typescriptlang.org/tsconfig#paths
+    "paths": {
+      "app/*":      ["./app/*"],
+      "pages/*":    ["./pages/*"],
+      "widgets/*":  ["./widgets/*"],
+      "features/*": ["./features/*"],
+      "entities/*": ["./entities/*"],
+      "shared/*":   ["./shared/*"],
+      "tests/*":    ["../tests/*"],
+    },
+
+    // https://www.typescriptlang.org/tsconfig#plugins
+    "plugins": [
+      {
+        "name": "typescript-plugin-css-modules"
+      }
+    ]
+  },
+
+  // https://www.typescriptlang.org/tsconfig#include
+  "include": [
+    "src",
+    "vitest.setup.ts"
+  ],
+
+  // https://www.typescriptlang.org/tsconfig#references
+  "references": [
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ]
+
+}

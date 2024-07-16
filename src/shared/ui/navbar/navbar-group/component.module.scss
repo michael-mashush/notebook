@@ -1,0 +1,10 @@
+.navbar-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+
+  &:not(:last-child) {
+    border-bottom: 1px solid hsl(var(--global-border));
+    padding-bottom: var(--space-sm);
+  }
+}

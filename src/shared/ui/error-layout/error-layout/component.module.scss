@@ -1,0 +1,36 @@
+.error-layout {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-2xl);
+  padding: var(--space-2xl);
+  min-height: 100svh;
+  background-color: hsl(var(--global-background));
+}
+
+.error-layout-image {
+  position: relative;
+  width: 100%;
+  max-width: 250px;
+  aspect-ratio: 380 / 510;
+
+  @media (width <= 768px) {
+    max-width: 200px;
+  }
+
+  @media (width <= 425px) {
+    max-width: 150px;
+  }
+
+  & svg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-position: top;
+    object-fit: contain;
+  }
+}

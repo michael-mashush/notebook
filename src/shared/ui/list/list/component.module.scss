@@ -1,0 +1,144 @@
+.list {
+  position: relative;
+  display: flex;
+  width: 100%;
+  list-style: none;
+
+  // ==================================================
+
+  &.list--direction-column {
+    flex-direction: column;
+  }
+
+  &.list--direction-column-reverse {
+    flex-direction: column-reverse;
+  }
+
+  &.list--direction-row {
+    flex-direction: row;
+  }
+
+  &.list--direction-row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  // ==================================================
+
+  &.list--justify-start {
+    justify-content: flex-start;
+  }
+
+  &.list--justify-center {
+    justify-content: center;
+  }
+
+  &.list--justify-end {
+    justify-content: flex-end;
+  }
+
+  &.list--justify-space-around {
+    justify-content: space-around;
+  }
+
+  &.list--justify-space-between {
+    justify-content: space-between;
+  }
+
+  &.list--justify-space-evenly {
+    justify-content: space-evenly;
+  }
+
+  // ==================================================
+
+  &.list--align-start {
+    align-items: flex-start;
+  }
+
+  &.list--align-center {
+    align-items: center;
+  }
+
+  &.list--align-end {
+    align-items: flex-end;
+  }
+
+  &.list--align-baseline {
+    align-items: baseline;
+  }
+
+  &.list--align-first-baseline {
+    align-items: first baseline;
+  }
+
+  &.list--align-last-baseline {
+    align-items: last baseline;
+  }
+
+  // ==================================================
+
+  &.list--gap-xs {
+    gap: var(--space-xs);
+  }
+
+  &.list--gap-sm {
+    gap: var(--space-sm);
+  }
+
+  &.list--gap-md {
+    gap: var(--space-md);
+  }
+
+  &.list--gap-lg {
+    gap: var(--space-lg);
+  }
+
+  &.list--gap-xl {
+    gap: var(--space-xl);
+  }
+
+  &.list--gap-2xl {
+    gap: var(--space-2xl);
+  }
+
+  &.list--gap-3xl {
+    gap: var(--space-3xl);
+  }
+
+  &.list--gap-4xl {
+    gap: var(--space-4xl);
+  }
+
+  &.list--gap-5xl {
+    gap: var(--space-5xl);
+  }
+
+  &.list--gap-6xl {
+    gap: var(--space-6xl);
+  }
+
+  &.list--gap-7xl {
+    gap: var(--space-7xl);
+  }
+
+  &.list--gap-8xl {
+    gap: var(--space-8xl);
+  }
+
+  &.list--gap-9xl {
+    gap: var(--space-9xl);
+  }
+
+  &.list--gap-10xl {
+    gap: var(--space-10xl);
+  }
+
+  &.list--gap-11xl {
+    gap: var(--space-11xl);
+  }
+
+  &.list--gap-12xl {
+    gap: var(--space-12xl);
+  }
+
+  // ==================================================
+}

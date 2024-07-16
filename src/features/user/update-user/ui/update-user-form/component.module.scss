@@ -1,0 +1,30 @@
+.form {
+  position: relative;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.form-columns {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: var(--space-lg);
+}
+
+.form-avatar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+  min-width: calc(var(--control-size-md) * 2 + var(--space-lg));
+  max-width: calc(var(--control-size-md) * 2 + var(--space-lg));
+  min-height: calc(var(--control-size-md) * 2 + var(--space-lg));
+  max-height: calc(var(--control-size-md) * 2 + var(--space-lg));
+}
+
+.form-fields {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-direction: column;
+  gap: var(--space-lg);
+}

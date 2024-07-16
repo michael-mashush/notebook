@@ -1,0 +1,12 @@
+export const TRANSITION_DELAY_25  = 0.025;
+export const TRANSITION_DELAY_50  = 0.050;
+export const TRANSITION_DELAY_75  = 0.075;
+export const TRANSITION_DELAY_100 = 0.100;
+export const TRANSITION_DELAY_125 = 0.125;
+export const TRANSITION_DELAY_150 = 0.150;
+export const TRANSITION_DELAY_175 = 0.175;
+export const TRANSITION_DELAY_200 = 0.200;
+export const TRANSITION_DELAY_225 = 0.225;
+export const TRANSITION_DELAY_250 = 0.250;
+export const TRANSITION_DELAY_275 = 0.275;
+export const TRANSITION_DELAY_300 = 0.300;

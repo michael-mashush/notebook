@@ -1,0 +1,16 @@
+@font-face {
+  font-display: swap;
+  font-family: 'Inter';
+  src:
+    url('../assets/fonts/inter/inter.woff2') format('woff2'),
+    url('../assets/fonts/inter/inter.woff') format('woff'),
+    url('../assets/fonts/inter/inter.ttf') format('truetype');
+}
+@font-face {
+  font-display: swap;
+  font-family: 'JetBrains Mono';
+  src:
+    url('../assets/fonts/jetbrains-mono/jetbrains-mono.woff2') format('woff2'),
+    url('../assets/fonts/jetbrains-mono/jetbrains-mono.woff') format('woff'),
+    url('../assets/fonts/jetbrains-mono/jetbrains-mono.ttf') format('truetype');
+}

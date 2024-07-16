@@ -1,0 +1,28 @@
+.dialog-wrapper {
+  position: fixed;
+  z-index: var(--z-index-dialog);
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: var(--space-2xl);
+  pointer-events: none;
+}
+
+.dialog {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  overflow: auto;
+  border: 1px solid hsl(var(--global-border));
+  border-radius: var(--radius-sm);
+  padding: var(--space-2xl);
+  width: 100%;
+  max-width: 400px;
+  min-height: min-content;
+  max-height: 100%;
+  box-shadow: var(--space-sm) var(--space-sm) var(--space-sm) #00000020;
+  background-color: hsl(var(--global-background));
+  pointer-events: all;
+}

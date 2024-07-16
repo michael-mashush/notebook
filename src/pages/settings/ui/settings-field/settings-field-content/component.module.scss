@@ -1,0 +1,10 @@
+.settings-field-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+
+  @media (width <= 768px) {
+    width: 100%;
+  }
+}

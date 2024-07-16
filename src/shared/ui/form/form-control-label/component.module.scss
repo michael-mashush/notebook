@@ -1,0 +1,22 @@
+.form-control-label {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: var(--space-lg);
+
+  &.form-control-label--position-top {
+    flex-direction: column-reverse;
+  }
+
+  &.form-control-label--position-right {
+    flex-direction: row;
+  }
+
+  &.form-control-label--position-bottom {
+    flex-direction: column;
+  }
+
+  &.form-control-label--position-left {
+    flex-direction: row-reverse;
+  }
+}
