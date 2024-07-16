@@ -13,7 +13,10 @@ export type SignInWithGithubError  = AuthError;
 export async function signInWithGithub(): Promise<SignInWithGithubResult> {
 
   const response = await supabase.auth.signInWithOAuth({
-    provider: 'github'
+    provider: 'github',
+    options:  {
+      redirectTo: import.meta.env.BASE_URL
+    }
   });
 
   if (response.error) {

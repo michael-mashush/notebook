@@ -13,7 +13,10 @@ export type SignInWithGitlabError  = AuthError;
 export async function signInWithGitlab(): Promise<SignInWithGitlabResult> {
 
   const response = await supabase.auth.signInWithOAuth({
-    provider: 'gitlab'
+    provider: 'gitlab',
+    options:  {
+      redirectTo: import.meta.env.BASE_URL
+    }
   });
 
   if (response.error) {
