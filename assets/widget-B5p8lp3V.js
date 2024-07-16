@@ -1,0 +1,1 @@
+import{j as s,an as t,r as o,l as i,m as c,n as l,L as m}from"./index-Df6GIiYg.js";const u={"main-layout-inner":"_main-layout-inner_1uwep_1"},j=a=>{const{children:n,className:e,...r}=a;return s.jsx("div",{className:t(e,u["main-layout-inner"]),...r,children:n})},x=()=>s.jsx(i,{children:s.jsxs(c,{children:[s.jsx(l,{}),s.jsx(m,{})]})}),p=o.memo(x);export{p as M,j as a};
