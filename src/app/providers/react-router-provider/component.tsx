@@ -5,7 +5,7 @@ import {
 import {
   Navigate,
   RouterProvider,
-  createBrowserRouter
+  createHashRouter
 } from 'react-router-dom';
 
 import {
@@ -33,7 +33,7 @@ const ReactRouterProvider: FunctionComponent<Props> = (props) => {
     children
   } = props;
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       errorElement: <RouterErrorFallback />,
       element:      children,
