@@ -15,7 +15,7 @@ export async function signInWithGitlab(): Promise<SignInWithGitlabResult> {
   const response = await supabase.auth.signInWithOAuth({
     provider: 'gitlab',
     options:  {
-      redirectTo: import.meta.env.BASE_URL
+      redirectTo: 'https://michael-mashush.github.io/notebook/'
     }
   });
 

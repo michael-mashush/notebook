@@ -15,7 +15,7 @@ export async function signInWithGithub(): Promise<SignInWithGithubResult> {
   const response = await supabase.auth.signInWithOAuth({
     provider: 'github',
     options:  {
-      redirectTo: import.meta.env.BASE_URL
+      redirectTo: 'https://michael-mashush.github.io/notebook/'
     }
   });
 
